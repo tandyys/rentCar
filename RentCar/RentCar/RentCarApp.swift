@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct RentCarApp: App {
+    init() {
+        UITableView.appearance().sectionHeaderHeight = 0
+        UITableView.appearance().sectionFooterHeight = 10
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FormView()
         }
     }
 }

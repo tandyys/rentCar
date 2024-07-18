@@ -12,7 +12,18 @@ struct ContentView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.gray.opacity(0.2))
-                .frame(height: 400)
+                .frame(height: 450)
+            
+            VStack(spacing: 0) {
+                Image("tesla2")
+                    .resizable()
+                    .frame(width: 350, height: 200)
+                Image("teslalogo")
+                    .resizable()
+                    .frame(width: 350, height: 150)
+                    .offset(y: -80)
+            }
+            .offset(y: -200)
             
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
@@ -58,6 +69,7 @@ struct ContentView: View {
                 interiorInfo
             }
             .padding()
+            .offset(y: 40)
         }
         .padding()
     }
