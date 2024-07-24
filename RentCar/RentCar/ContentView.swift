@@ -12,7 +12,7 @@ struct ContentView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.gray.opacity(0.2))
-                .frame(height: 450)
+                .frame(height: 460)
             
             VStack(spacing: 0) {
                 Image("tesla2")

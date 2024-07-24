@@ -12,12 +12,6 @@ struct FormView: View {
     @State var dummySelected = 0
     @State var dummyBool = true
     
-    init() {
-        UITableView.appearance().sectionHeaderHeight = 0
-        UITableView.appearance().sectionFooterHeight = 10
-        UITableView.appearance().backgroundColor = .clear
-    }
-    
     var body: some View {
         VStack {
             Form {
@@ -85,6 +79,7 @@ struct FormView: View {
                 }
             }
         }
+        .scrollContentBackground(.hidden)
         .frame(minWidth: 0, maxWidth: .infinity)
     }
 }

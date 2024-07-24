@@ -20,7 +20,7 @@ struct ButtonView: View {
         }
         .overlay {
             Text("COMPLETE ORDER")
-                .font(.system(size: 26))
+                .font(.system(size: 22))
                 .bold()
                 .foregroundStyle(.white)
         }
@@ -32,4 +32,5 @@ struct ButtonView: View {
 
 #Preview {
     ButtonView()
+        .previewLayout(.sizeThatFits)
 }
